@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+manifest.json
+robots.txt
+reportWebVital.js
+setupTests.js
+.gitignore
