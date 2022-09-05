@@ -22,8 +22,8 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-manifest.json
 robots.txt
-reportWebVitals.js
-setupTests.js
+reportWebVitals.jsx
+setupTests.jsx
 .gitignore
+index.js

@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 
-function Form({ todos, setTodos }) {
+function Form({ todos, setTodos, status, setStatus }) {
   const [controlInput, setControlInput] = useState("")
 
   const handleInput = (e) => {
@@ -21,6 +21,10 @@ function Form({ todos, setTodos }) {
     setControlInput("")
   }
 
+  const handleStatus = (e) => {
+    setStatus(e.target.innerText)
+  }
+
   return (
     <div>
       <form onSubmit={handleForm}>
@@ -30,6 +34,17 @@ function Form({ todos, setTodos }) {
           value={controlInput}
           placeholder="What needs to be done?"
         />
+        <ul className="links-container" onClick={handleStatus}>
+          <li className="links">
+            <a href="#completed">Completed</a>
+          </li>
+          <li className="links">
+            <a href="#active">Active</a>
+          </li>
+          <li className="links">
+            <a href="#all">All</a>
+          </li>
+        </ul>
       </form>
     </div>
   )

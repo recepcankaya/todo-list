@@ -1,10 +1,10 @@
 import React from "react"
 import Todo from "./Todo"
 
-function List({ todos, setTodos }) {
+function List({ todos, setTodos, filterTodos }) {
   return (
     <div>
-      {todos.map((todo) => {
+      {filterTodos.map((todo) => {
         return (
           <div key={todo.id}>
             <ul>

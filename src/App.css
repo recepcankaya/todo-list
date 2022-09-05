@@ -82,3 +82,18 @@ input[type=text] {
     rotate: 90deg;
   }
 }
+.links-container {
+  list-style-type: none;
+  position: absolute;
+  right: 22%;
+  bottom: -21px;
+}
+.links {
+  float: right;
+  margin-left: 20px;
+}
+.links a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.25rem;
+}
