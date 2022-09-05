@@ -10,7 +10,7 @@ function App() {
 
   useEffect(() => {
     handleFilter()
-  }, [status, todos])
+  }, [status, todos]) // eslint-disable-line
 
   const handleFilter = () => {
     switch (status) {
