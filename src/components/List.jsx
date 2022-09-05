@@ -9,7 +9,7 @@ function List({ todos, setTodos }) {
           <div key={todo.id}>
             <ul>
               <Todo
-                item={todo}
+                todo={todo}
                 todos={todos}
                 setTodos={setTodos}
                 text={todo.text}

@@ -1,9 +1,84 @@
+:root {
+  --checked-color: rgb(67, 65, 65);
+  --complete-icon-color: #FFCC70;
+}
 .App {
   text-align: center;
 }
-.add-button:hover {
-  cursor: pointer;
+* {
+  box-sizing: border-box;
+}
+
+
+/* For input and add icon */
+form {
+  position: relative;
+}
+input {
+  width: 20%;
+  height: 32px;
+  position: relative;
+  top: 9px;
+}
+input:focus {
+  outline: none;
+}
+input::placeholder {
+  font-style: italic;
+}
+input[type=text] {
+  padding: 5px;
+  font-size:medium;
+}
+
+
+/* For todo list */
+.list-container {
+  display: flex;
+  column-gap: 40px;
+  margin-left: 440px;
+  margin-top: 50px;
+  position: relative;
 }
 .todo-list {
   list-style: none;
+  font-size: 1.50rem;
+
+}
+.completed {
+  text-decoration: line-through;
+  text-decoration-color: var(--checked-color);
+  color: var(--checked-color);
+}
+
+.delete-icon {
+  font-size: 25px;
+  position: absolute;
+  right: 40%;
+  color: rgba(255, 0, 0, 0.40);
+}
+.delete-icon:hover {
+  color: red;
+}
+.checked, .complete-icon {
+  color: #ffcd7083;
+  font-size: 25px;
+}
+.complete-icon:hover {
+  color: var(--complete-icon-color);
+}
+.checked, .complete-icon, .delete-icon:hover {
+  cursor: pointer;
+}
+.checked {
+  color: var(--complete-icon-color);
+}
+
+@keyframes deleteAnimation {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 90deg;
+  }
 }

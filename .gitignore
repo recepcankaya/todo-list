@@ -24,6 +24,6 @@ yarn-error.log*
 
 manifest.json
 robots.txt
-reportWebVital.js
+reportWebVitals.js
 setupTests.js
 .gitignore
